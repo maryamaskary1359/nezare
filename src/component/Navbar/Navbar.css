@@ -1,0 +1,222 @@
+
+.main-head{
+ background-color: var(--section-color);
+ padding: 2rem 2rem; 
+}
+
+.nav-imag{
+    width: 5rem;
+    height: 5rem;
+    margin-left:3rem;   
+}
+.navbar-toggler {
+    width: 5rem;
+    height: 5rem;
+    border-color: var(--primary-color) !important;
+    outline: none;
+}
+
+.nav-link{
+    margin-left: 4rem;
+    font-size: 1.5rem;
+}
+.nav-link__about{
+    margin-left: 0;
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 12rem;
+    top:2.5rem;
+    border-top: none;
+    margin-right: 1rem;
+}
+.dropdown-item{
+    margin-bottom: 1rem;
+    font-size:1.2rem;
+    position: relative;
+}
+.dropdown-item:hover{
+ background-color: transparent !important;
+}
+.dropdown-item:hover::before{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: .2rem;
+    background-color:var(--primary-color);
+    bottom: 0;
+    left: 0;
+    right:1rem;
+}
+.dropdown-submenu-container{
+ background-color: transparent !important;
+}
+.dropdown-item:last-child{
+    margin-bottom: 0;
+}
+.active{
+    position: relative;
+ }
+ .active::before{
+     content: '';
+     position: absolute;
+     width: 50%;
+     height: .2rem;
+     background-color:var(--primary-color);
+     bottom: 0;
+     left: 0;
+     right:1rem; 
+ }
+ 
+ .brand.active::before{
+     content: none;
+ }
+ .nav-item.dropdown:hover .dropdown-menu {
+     display: block;
+ }
+.main-header__left{
+ display: flex;
+ align-items: center;
+
+}
+.shearchbar {
+ height: 4rem;
+ border-radius: 1rem;
+ background-color: var(--section-color);
+ padding: .5rem .1rem;
+ margin-left: 1rem;
+ display: flex;
+ max-width:25rem;
+ align-items: center;
+ justify-content: center;
+ border: 1px solid var(--primary-color);
+}
+/* .shearchbar:hover>.shearchbar-input{
+  width:100%;
+} */
+.toggle >.shearchbar-input{
+    width: 100%;
+}
+
+
+
+.shearchbar-input{
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.6rem;
+  color: var( --text-color);
+  /* transition: all 400ms ease; */
+  width: 0;
+}
+
+.search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: none;
+    outline: none;
+}
+.search-icon{
+    width: 1rem;
+    height:1rem;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    font-size: 1.5rem;
+    transition: all 400ms ease;
+}
+.search-btn:hover>.search-icon{
+    color:var(--primary-color) ;
+    background-color: var(--second-color) ;
+}
+.main-header__cart-btn{
+  margin-left: 1rem;
+  background-color: var(--second-color);
+  padding: .5rem 1rem;
+  border-radius: .4rem;
+}
+.main-header__cart-btn:hover{
+    color: var(--primary-color);
+}
+.main-header__cart-icon{
+ font-size:1.5rem;  
+}
+.main-header_profile-text{
+  font-size: 1.5rem;
+  background-color: var( --primary-color);
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #fff;
+ cursor: pointer;
+}
+.main-header_profile-text:hover{
+  background-color: var(--section-color);
+  color: var(--primary-color);
+  border-color:  var(--primary-color);
+
+}
+
+  
+  /* responsive */
+  @media screen and (max-width:992px){
+    .shearchbar{
+        max-width: 16rem;
+    }
+    .nav-link{
+        margin-left:2rem;
+      
+    }
+}
+  @media screen and (max-width:768px) {
+    .main-head{
+     max-height: 150vh;
+    
+    }
+    .navbar-collapse {
+     display: block;
+      flex-direction: column;
+    }
+    .nav-link{
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+   .dropdown-menu.show.dropdown-menu-end {
+    position: relative;
+    top:-2.5rem
+    }
+    #responsive-navbar-nav{
+        align-items: start;
+        padding-right: 3rem;
+    }
+    .dropdown-item:hover::before,.active::before{
+        width: 5%;
+    }
+    .nav-imag{
+        margin: 0 1rem 2rem 0;
+    }
+    .navbar-toggler{
+        margin: 0 0 2rem 1rem;
+    }
+    .main-header__left{
+        flex-wrap: wrap-reverse;
+        gap: 1;
+    }
+}
+@media screen and (max-width:410px) {
+    .main-header__left{
+     display: flex;
+     flex-direction: column-reverse;
+}
+    .shearchbar {
+        margin-top: 2rem;
+    }
+   
+}

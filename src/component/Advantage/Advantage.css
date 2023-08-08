@@ -1,0 +1,16 @@
+.advantage-wrapper{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+
+}
+.advantage__img{
+
+}
+.advantage__description{
+    color: #6c757d;
+    cursor: default;
+    margin:1rem 0 ;
+    font-size: 1.5rem;
+}

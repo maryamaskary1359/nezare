@@ -1,0 +1,52 @@
+
+.contac{
+margin:2rem 0 10rem 0;
+}
+.contac-title{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.contac__subtitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1rem;
+
+}
+.contac__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    transition: all 400ms ease;
+}
+.contac__item:hover{
+    color: #212121a4;
+}
+.contac__item:last-child{
+    margin-bottom: 0;
+}
+.contac__subtitle-address{
+
+}
+.contac__icon{
+ margin-left: 1rem;
+ color: var( --primary-color);
+ font-size: 2rem;
+}
+.contac__subtitle-phone{
+
+}
+.contac__subtitle-telegram{
+
+}
+.contac__link{
+
+}
+
+ @media screen and (max-width:380px){
+    .contac__item{
+      font-size: 1.1rem;
+    }
+
+  }

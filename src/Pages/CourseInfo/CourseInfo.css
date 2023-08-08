@@ -1,0 +1,106 @@
+.music-home{
+ margin: 10rem 0 5rem;
+ cursor: default;
+}
+.music-biografy{
+
+}
+.music-biografy__teacher{
+margin-bottom: 5rem;
+cursor: default;
+}
+.music-biografy__teacher-name{
+ font-size: 5rem;
+ font-style: italic;
+ font-weight:bolder;
+}
+.music-biografy__teacher-profession{
+    color: #6c757d;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+.music-biografy__description{
+
+}
+.music-biografy__description-title{
+  font-size: 2.4rem;
+}
+.music-biografy__description-subtitle{
+ text-align: justify;
+ padding: 0 1rem;
+}
+.music-profile{
+
+    width:46rem;
+    height: 46rem;
+
+
+background-color:var(--second-color);
+border-radius: 100%;
+box-shadow:0rem 0rem 1rem rgba(255, 255, 0, 0.218);
+border :3px solid var(--primary-color)
+}
+.music-profile__img{
+   max-width:80%;
+   max-height:80%;
+   position: relative;
+   top: 4rem;
+
+    
+}
+
+  /* responsive */
+  @media screen and (max-width:1200px) {
+   .music-profile{
+    width: 38rem;
+    height: 38rem;
+   }
+}
+  @media screen and (max-width:992px) {
+    .music-home .row{
+        flex-direction: column-reverse ;
+       
+    }
+   .music-profile{
+    margin:0 auto 6rem;
+    }
+    .music-biografy__teacher-name{
+      font-size: 4rem;
+    }
+}
+ @media screen and (max-width:576px){
+   .music-biografy__teacher{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .music-profile{
+    width:35rem;
+    height: 35rem;
+   }
+   .music-biografy__description{
+     position: relative;
+     margin-bottom: 20rem;
+   }
+   .music-biografy__description-title{
+    margin-right: 4%;
+   }
+   .music-biografy__description-subtitle{
+    position: absolute;
+    max-width: 38rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto ;
+   
+   }
+}
+@media screen and (max-width:380px){
+  .music-profile{
+    width:28rem;
+    height:28rem;
+   }
+   .music-biografy__description-subtitle{
+    max-width: 35rem;
+   }
+}

@@ -1,0 +1,70 @@
+/* Start Landing Styles*/
+.landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(backgrond-landing.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20rem 0;
+    color: var(--second-color);
+  }
+  
+  .landing__title {
+    font-size:4rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    margin-bottom:(3.5rem);
+  
+  }
+  .landing__subtitle {
+    font-size: 1.6rem;
+    height: 2rem;
+    line-height: 2;
+    margin-top: 3.5rem;
+  }
+  /* Start Courses Styles*/
+  .courses,.gallery,.advantage{
+    margin-top: 10rem;
+  }
+  .courses-content,.gallery-content,.advantage-content{
+    margin-top: 4rem;
+  }
+  .slider{
+    max-height:700px;
+
+  }
+  .swiper-img{
+  width: 100%;
+    height:90%;
+  }
+  .swiper-button-prev,.swiper-button-next{
+    color: var(--primary-color);
+  }
+   .swiper-pagination-bullet-active {
+    background: var(--primary-color);
+   }
+
+
+   /* responsive */
+   @media screen and (max-width:768px){
+    .landing__title{
+        font-size: 3.4rem;
+    }
+    .landing__subtitle{
+        font-size: 1.5rem;
+    }
+ 
+  }
+   @media screen and (max-width:576px){
+    .landing__title{
+        font-size: 3rem;
+    }
+    .landing__subtitle{
+        font-size: 1.3rem;
+    }
+    .swiper-pagination-bullet{
+      margin:-1.5rem !important;
+  
+     }
+ 
+  }

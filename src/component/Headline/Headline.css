@@ -1,0 +1,33 @@
+.Headline {
+    font-size: 3.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  .Headline::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 5%;
+    height: 1px;
+    vertical-align: middle;
+    background-color: var(--text-color);
+    right: .5rem;
+  }
+  .Headline::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 5%;
+    height: 1px;
+    vertical-align: middle;
+    background-color: var(--text-color);
+    left: .5rem;
+  }
+      /* responsive */
+  @media screen and (max-width:576px){
+    .Headline{
+      font-size: 3rem;
+    }
+  }

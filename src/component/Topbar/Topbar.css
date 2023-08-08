@@ -1,0 +1,45 @@
+
+
+/* style Topbar */
+.topbar{
+    width: 100%;  
+    background-color: var(--second-color);
+
+  }
+  .topbar-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;  
+    -webkit-box-align: center;  
+    -ms-flex-align: center;  
+     align-items: center; 
+    -webkit-box-pack: justify; 
+    -ms-flex-pack: justify; 
+     justify-content: space-between;
+    padding: 2rem 0rem;
+     
+  }
+  .topbar-left{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+  }
+  .top-bar__link{
+   margin-left: 0.5rem;
+  
+  }
+  .top-bar__icon{
+   color: var( --primary-color);
+  }
+  .topbar-left__phone{
+   margin-right: 2rem;
+  }
+  
+  
+  /* responsive */
+  @media screen and (max-width:768px) {
+      .topbar{
+          display: none;
+      }
+  }
